@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess The Number!</h1>
+      <p class="between">(Between 1 and 30)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main class="main1">
+      <section class="left">
+        <p class="message">Start guessing...</p>
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+        
+      </section>
+      
+    </main>
+    
+    <main class="main2">
+        <section class="right">
+            <p class="label-score">💯 Score: <span class="score">20</span></p>
+            <p class="label-highscore">
+              🥇 Highscore: <span class="highscore">0</span>
+            </p>
+          </section>
+    </main>
+    <main class="main2">
+        <section class="right">
+            <button class="btn2 rules">Rules</button>
+            <button class="btn2 about">Contact Us</button>
+          </section>
+    </main>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2 class="dialog-heading">Rules:</h2>
+      <p class="dialog-text">
+        -There is a hidden number behind that '?' mark. <br>
+        -You have to guess that number with the help of the hints that you'll get after each try.<br>
+        -Hidden number is always between 1-30 (including both 1 and 30)<br>
+        -You will get 20 chances to guess the number.<br>
+        -After every chance your score will decrease by one.
+      </p>
+    </div>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2 class="dialog-heading">Hello I am White Pegasus.</h2>
+      <p class="dialog-text">
+        Instagram: https://www.instagram.com/white_pegasus_/<br>
+        Gmail: whitepegasus1603@gmail.com
+
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
